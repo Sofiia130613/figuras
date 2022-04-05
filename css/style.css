@@ -1,0 +1,102 @@
+body{
+    background: #f7baba;
+    text-align: center;
+    padding-top: 50px ;
+}
+
+h1{
+    color: #000000;
+    font-size: 50px;
+    margin-bottom: 50px;
+}
+
+button{
+    border: 2px solid #ffffff;
+    background: #ec83f0;
+    padding: 14px 20px;
+    margin: 10px;
+    font-size: 13px;
+    cursor: pointer;
+}
+#fila{
+display: flex;
+justify-content: space-evenly;
+align-items:center;
+}
+
+#contBotones{
+    width: 450px;
+    height: 450px;
+    background: #eb7ebd;
+}
+
+#contFiguras{
+    width: 450px;
+    height: 450px;
+    background: #861c6f;
+    background-size: cover 50px;
+    color: #ffffff;
+}
+
+#figura{
+    width: 180px;
+    height: 180px;
+    background: #ec83f0;
+    margin: 0 auto; 
+    /* Auto cuando se centra */
+    margin-top: 60px;
+    transition: .5s;
+}
+
+#figura.circulo{
+    border-radius: 50%;
+    transform: rotate(-360deg);
+    background: #000000;
+}
+
+#figura.rombo{
+    width:180px;
+    height: 180px;
+    transform: rotate(-45deg);
+    background: #eb7ebd;
+    transition: .5s;
+}
+
+#figura.rectangulohorizontal{
+    width: 180px;
+    height: 90px;
+    background: #f50a6c;
+}
+
+#figura.rectangulovertical{
+    width: 180px;
+    height: 240px;
+    background: #e1cbee;
+}
+
+#figura.imagen{
+    width: 250px;
+    height: 180px;
+    background: url(/imagenes/imagen.jpg);
+    border: 3px solid #ffffff;
+}
+
+#figura.subir{
+    transform: translateY(-60px);
+}
+
+#figura.bajar{
+    transform: translateY(80px);
+}
+
+#figura.izquierda{
+    transform: translateX(-60px);
+}
+
+#figura.derecha{
+    transform: translateX(60px);
+}
+
+#figura.diagonal{
+    transform: translateX(-120px) translateY(120px);
+}
